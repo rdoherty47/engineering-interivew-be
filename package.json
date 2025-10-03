@@ -1,0 +1,32 @@
+{
+  "name": "every-task-app",
+  "version": "1.0.0",
+  "description": "Task App for Every.io Interview",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "test",
+    "compile": "tsc",
+    "start": "npm run compile && node ./dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rdoherty47/every-task-app.git"
+  },
+  "author": "Ryan Marie Ketterer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rdoherty47/every-task-app/issues"
+  },
+  "homepage": "https://github.com/rdoherty47/every-task-app#readme",
+  "devDependencies": {
+    "@types/luxon": "^3.7.1",
+    "@types/node": "^24.6.2",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@apollo/server": "^5.0.0",
+    "graphql": "^16.11.0",
+    "luxon": "^3.7.2"
+  }
+}

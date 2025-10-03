@@ -1,0 +1,36 @@
+scalar DateTime
+scalar UUID
+
+enum Status {
+  to_do
+  in_progress
+  done
+  archived
+}
+
+type Task {
+    userId: UUID!
+    title: String!
+    description: String!
+    status: Status!
+    createdAt: DateTime!
+    modifiedAt: DateTime!
+    createdBy: UUID!
+    modifiedBy: UUID!
+}
+
+type Query {
+    getMyTasks(status: Status): [Task!]!
+}
+
+type Mutation {
+    createTask(
+        title: String!
+        description: String!
+    ): Task!
+    
+    updateTaskStatus(
+        taskId: UUID!
+        status: Status!
+    ): Task!
+}
