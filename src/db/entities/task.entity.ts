@@ -27,6 +27,6 @@ export class Task {
     @CreateDateColumn({ type: "varchar", name: "created_at" })
     createdAt: string
 
-    @UpdateDateColumn({ type: "varchar", name: "updated_at" })
-    updatedAt: string
+    @UpdateDateColumn({ type: "varchar", name: "modified_at" })
+    modifiedAt: string
 }
