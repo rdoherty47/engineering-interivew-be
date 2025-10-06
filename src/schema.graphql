@@ -9,6 +9,7 @@ enum Status {
 }
 
 type Task {
+    id: UUID!
     userId: UUID!
     title: String!
     description: String!
