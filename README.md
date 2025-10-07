@@ -7,6 +7,12 @@
 2. Navigate [here](https://studio.apollographql.com/sandbox/explorer) to test the API.
 3. Authentication is not fully built to use JWT - only a UUID user ID is required as part of the `Authentication` header. Ensure you're using the correct user ID when querying for and updating tasks.
 
+## Architecture
+I normally would make a diagram as detailed as possible for a new feature, outlining overall flows, GraphQL schema design, and database design (which I would put alongside the UX designs provided by product), so I did the same here. There wasn't a whole lot to add, but it still helped me approach the problem cleanly from the start.
+
+Here is a screenshot of my Miro diagram:
+<img src="./task-app-miro.png">
+
 ## Testing
 There is currently no automated testing for this app. Ideally, there would 
 - a single test file for each query/mutation
