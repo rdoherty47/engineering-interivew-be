@@ -1,5 +1,4 @@
 import { mapDbTaskToViewTask } from "../../dataMappers/map-db-task-to-view-task.js"
-import { Status } from "../../models/view/task.js"
 
 type CreateTaskInputArgs = {
     title: string

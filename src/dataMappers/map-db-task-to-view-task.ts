@@ -1,4 +1,3 @@
-import { GraphQLError } from "graphql";
 import { Task as DbTask } from "../db/entities/task.entity.js";
 import { Status, Task as ViewTask } from "../models/view/task.js";
 

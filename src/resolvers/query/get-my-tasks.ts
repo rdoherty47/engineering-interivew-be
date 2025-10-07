@@ -1,6 +1,5 @@
 import { mapDbTaskToViewTask } from "../../dataMappers/map-db-task-to-view-task.js"
 import { Task } from "../../db/entities/task.entity.js"
-import { Status } from "../../models/view/task.js"
 
 export async function getMyTasks(_, __, contextValue) {
     const user = contextValue.user
